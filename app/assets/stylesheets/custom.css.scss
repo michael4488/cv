@@ -1,0 +1,58 @@
+@import "bootstrap";
+
+/* general */
+
+html {
+  overflow-y: scroll;
+}
+
+header {
+  margin-top: 10px;
+  line-height: 60px;
+}
+
+body {
+  padding-top: 180px;
+}
+
+h1 {
+  font-size: 3em;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: solid; 
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: rgb(180,180,180);
+}
+
+/* header */
+#logo {
+  float: left;
+  font-size: 8em;
+  letter-spacing: -2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: $black;
+   &:hover {
+    color: rgb(176,176,176) ;
+  }
+}
+
+/* form */
+.btn.btn-block7 {
+  display: block;
+}
+
+/* errors */
+.errors {
+  color: #FF0033;
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
+}
