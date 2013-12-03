@@ -1,0 +1,14 @@
+<div class="container">
+  <h1> Sign in </h1>
+  <%= form_tag(sessions_path) do %>
+    <%= label_tag(:email, "Email") %>
+    <%= text_field_tag(:email) %>
+    <%= label_tag(:password, "Password") %>
+    <%= password_field_tag(:password,"", class: "block") %>
+    <%= check_box_tag(:remember_me, class: "inline") %>
+    <%= label_tag(:remember_me, "Remember me", class: "inline") %>
+    <%= submit_tag("Sign in", class: "btn btn-large btn-block7 btn-primary") %>
+  <% end %>
+
+  <p>New user? <%= link_to "Sign up now!", "users/new" %></p>
+</div>
